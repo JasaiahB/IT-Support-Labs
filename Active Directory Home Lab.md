@@ -13,11 +13,19 @@ Create a lab enviornment using VirtualBox with a Windows Server domain controlle
 - Create a Virtual Machine (VM) with the necessary hardware requirements to run windows server 2025. Go to Expert settings for the VM and enable two network adapters one NAT and the other Internal. Install and setup the Server OS on the VM.
 - Before installing directory roles go to Network connections on the server VM. Right-click the internal adapter, select properties, then IPv4. Setup a static IP by selecting "Use the following ip address", Plug in the following network values:
 
-    IP Address: 192.168.56.10
+    IP Address:  10.10.10.1
 
     Subnet Mask: 255.255.255.0 
 
-    Preferred DNS Server: 192.168.56.10 or 127.0.0.1 (loopback address)
+    Preferred DNS Server:  10.10.10.1 OR 127.0.0.1 (loopback address)
 - Install Active Directory Domain Services. Go to Add roles and Features, and select Active Directory Domain Services. Click next until you reach install then install, after installation click the flag alert next to manage, to promote the server to Domain Controller. Select add a new forest. After nameing the server and creating a password the VM should restart.
 - Create Users. Go to Tools (top-right), AD Users and Computers, Expand folders and right click users, then click new. Set up easy passwords and make it so user passwords dont expire for the lab enviornment.
-- Create another VM and install windows 11 pro on it. This VM will act as our client PC.
+- Create another VM and install windows 11 pro on it. This VM will act as our client PC. Setup network adapter as internal adn allow vm's. go to network connections and assign a static ip to the client adapter.
+
+   IP Address: 10.10.10.2
+
+   Subnet Mask: 255.255.255.0
+  
+   Preferred DNS Server: 10.10.10.1
+
+- Ping the server using Ipconfig to confirm connectivity. After the client is connected to the network join the client to the domain. Go to Settings, Accounts, Access work or school, Join this device to a local Active Directory domain, enter the domain name.
