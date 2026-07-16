@@ -37,6 +37,9 @@ Create a lab enviornment using VirtualBox with a Windows Server domain controlle
    <img width="1024" height="768" alt="Windows Install" src="https://github.com/user-attachments/assets/9e774d63-ee1b-4bba-902d-0be1130584ee" />
 
 - Ping 10.10.10.1 to confirm connectivity to the DC. After the client is connected to the network, join the client to the domain. Go to Settings, Accounts, Access work or school, Join this device to a local Active Directory domain, and enter the domain name. Enter the domain admin credentials when prompted. After joining, try signing into one of the users that were previously created to test.
+
+  <img width="1024" height="768" alt="Domain Join" src="https://github.com/user-attachments/assets/0663619b-8453-4e26-994f-557a9ae9328a" />
+
 - At this point the lab is ready for experimentation. I used the allie user i had created to practice Disabling accounts, and changing passwords.
 
   <img width="1024" height="768" alt="Disabled User" src="https://github.com/user-attachments/assets/434f33b2-3cac-418d-8f1e-74993e9616d7" />
