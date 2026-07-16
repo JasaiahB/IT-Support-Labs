@@ -11,7 +11,7 @@ Create a lab enviornment using VirtualBox with a Windows Server domain controlle
 - Download Windows 11 ISO
 - Host Machine that can run two or more VM's simultaniously
 ## *Steps*
-- Create a Virtual Machine (VM) with the necessary hardware requirements to run Windows Server 2025. Go to Expert settings for the VM and enable two network adapters, one NAT and the other Internal. Install and set up the Server OS on the VM.
+- Create a Virtual Machine (VM) with the necessary hardware requirements to run Windows Server 2025. Go to Expert settings for the VM and enable two network adapters, one NAT and the other Internal. Install and set up the Server OS on the VM. Its also a good idea at this point to install guest additions on the VM to enable file sharing and smoother mouse movements. To install click Devices (top of window), Insert Guest Additions CD Image, find the installer on the virtual hard drive, install and restart the vm.
 - Before installing directory roles, go to Network connections on the server VM. Right-click the internal adapter, select Properties, then IPv4. Set up a static IP by selecting "Use the following IP address," and plug in the following network values:
 
 *IP Address*: 10.10.10.1
