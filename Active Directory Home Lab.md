@@ -28,4 +28,4 @@ Create a lab enviornment using VirtualBox with a Windows Server domain controlle
   
    Preferred DNS Server: 10.10.10.1
 
-- Ping the server using Ipconfig to confirm connectivity. After the client is connected to the network join the client to the domain. Go to Settings, Accounts, Access work or school, Join this device to a local Active Directory domain, enter the domain name.
+- Ping the server using Ipconfig to confirm connectivity. After the client is connected to the network join the client to the domain. Go to Settings, Accounts, Access work or school, Join this device to a local Active Directory domain, enter the domain name. Enter in the domain admin credentials when prompted. After joining try signing into one the users that were previously created to test. Try disabling users and changing passwords.
